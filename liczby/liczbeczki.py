@@ -1,35 +1,17 @@
 #!/usr/bin/python3
 
-
-liczba = 123
-
-tekst = 'sto dwadzieścia trzy'
-
-teksty = {
-'0': '',
-'100': 'sto',
-'200': 'dwieście',
-'20': 'dwadzieścia',
-'3': 'trzy',
-'5': 'pięć'
-}
-
-
-def zamiana(liczba):
-
-
-    setki = int(liczba / 100)
-    dzies = int((liczba - setki * 100) / 10)
-    jedn = liczba - dzies * 10 - setki * 100
-    return ' -- '.join(
-        [
-            teksty[str(setki*100)],
-            teksty[str(dzies*10)],
-            teksty[str(jedn)]
-        ]
-     )
-
-print(zamiana(100))
-print(zamiana(223))
-
-#assert zamiana(200) == 'sto', "nie udało się"
+print "program generujący: \"słownie\""
+liczba = raw_input ("Wprowadź liczbę: ")
+liczba1 = list (liczba)
+liczba1.reverse ()
+tysiace = ('tysiąc','tysiące','tysięcy')
+miliony = ('milion','miliony','milionów')
+miliardy = ('miliard','miliardy','miliardów')
+setki = ('sto','dwieście','trzysta','czterysta','pięćset','sześćset','siedemset','osiemset','dziewięćset')
+cyfry = ('zero','jeden','dwa','trzy','cztery','pięć','sześć','siedem','osiem','dziewięć','dziesięć','jedenaście','dwanaście','trzynaście','czternaście','piętnaście','szesnaście','siedemnaście','osiemnaście','dziewiętnaście')
+dziesiatki = ('dwadzieścia','trzydzieści','czterdzieści','pięćdziesiąt','sześćdziesiąt','siedemdziesiąt','osiemdziesiąt','dziewięćdziesiąt')
+slownie = ["zł"]
+for nr, cyfra in enumerate (liczba1):
+    if nr == 0 or nr == 3 or nr == 6 or nr == 9:
+    if nr in (0, 3, 6, 9):
+    if nr%3 == 0:
