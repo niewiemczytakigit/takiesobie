@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-print "program generujący słownie"
-liczba = raw_input ("Wprowadź liczbę: ")
+print("program generujący słownie")
+liczba = input ("Wprowadź liczbę: ")
 liczba1 = list (liczba)
 liczba1.reverse ()
 tysiace = ('tysiąc','tysiące','tysięcy')
@@ -56,6 +56,6 @@ for nr, cyfra in enumerate (liczba1):
             continue
         else: # wypisuje setki
             slownie.insert (0, setki[ int (cyfra)-1])
-print "Słownie:",
+print("Słownie:", end=' ')
 for i in slownie:
-    print i,
+    print(i, end=' ')
