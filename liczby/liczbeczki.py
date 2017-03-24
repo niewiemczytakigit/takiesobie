@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-print "program generujący: \"słownie\""
+print "program generujący słownie"
 liczba = raw_input ("Wprowadź liczbę: ")
 liczba1 = list (liczba)
 liczba1.reverse ()
