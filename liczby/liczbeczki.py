@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+
+
+
+
 liczba = 123
 
 tekst = 'sto dwadzieścia trzy'
